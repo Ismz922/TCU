@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Age - Services</title>
+
+    <!-- Tipografía -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/htmlGeneral.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Estilos personalizados -->
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8f9fa;
+        scroll-behavior: smooth;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+      }
+
+      .hero-banner {
+        background: url("./img/Banner4.webp") center/cover no-repeat;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+
+      .hover-scale:hover {
+        transform: scale(1.03);
+        transition: transform 0.3s ease;
+      }
+
+      .servicio-titulo {
+        font-size: 1.5em;
+        margin-bottom: 1rem;
+      }
+
+      .btn-primary {
+        background-color: #f8e501;
+        color: #222;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #d6c701;
+        color: #000;
+      }
+
+      .fa-ul {
+        padding-left: 1.5em;
+      }
+
+      .lucide {
+        stroke-width: 2.2;
+        vertical-align: middle;
+      }
+
+      footer {
+        background-color: #222;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+ <header>
+  <nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background-color: #f8e501">
+    <div class="container">
+      <!-- Logo -->
+      <a
+        class="navbar-brand d-flex align-items-center justify-content-center shadow-sm"
+        href="index-en.html"
+        style="
+          background-color: white;
+          border-radius: 50%;
+          border: 3px solid #64a721;
+          width: 70px;
+          height: 70px;
+          padding: 5px;
+        "
+      >
+        <img
+          src="./img/LogoTCU-fotor-bg-remover-20250609144051.png"
+          alt="Logo Edad Dorada"
+          style="max-height: 60px; max-width: 60px"
+        />
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        ☰ Menú
+      </button>
+
+      <!-- Menú principal colapsable -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index-en.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Servicios-en.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Instalaciones-en.html">Facilities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="NuestroEquipo-en.html">Our team</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Selector de idioma siempre visible -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="languageDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+          >
+            🌐 Language / Lenguaje
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="languageDropdown"
+          >
+            <li>
+              <a class="dropdown-item" href="Servicios.html">
+                <img
+                  src="https://hatscripts.github.io/circle-flags/flags/es.svg"
+                  alt="Español"
+                  width="20"
+                  class="me-2"
+                />
+                Español
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="Servicios-en.html">
+                <img
+                  src="https://hatscripts.github.io/circle-flags/flags/us.svg"
+                  alt="English"
+                  width="20"
+                  class="me-2"
+                />
+                English
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+    <!-- HERO -->
+    <section class="hero-banner">
+      <h1
+        class="animate__animated animate__fadeInDown"
+        style="
+          margin-top: 7.5em;
+          color: #030303;
+          font-family: 'Courgette', serif;
+        "
+      >
+        Welcome to the Golden Age
+      </h1>
+    </section>
+
+    <!-- LOGO Y SLOGAN -->
+    <section class="logo-section text-center py-5">
+      <div class="container" data-aos="fade-up">
+        <div
+          class="d-inline-block shadow-lg mb-3"
+          style="
+            border: 5px solid #64a721;
+            border-radius: 50%;
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin-bottom: 20px;
+          "
+        >
+          <img
+            src="img/LogoTCU-fotor-bg-remover-20250609144051.png"
+            alt="Logo empresa"
+            style="max-height: 120px; max-width: 120px"
+          />
+        </div>
+        <h2 class="slogan">
+          They always took care of you, it's time to take care of them
+        </h2>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios-section py-5">
+      <div class="container text-center mb-5">
+        <h2 class="titulo-principal" data-aos="zoom-in">Our Services</h2>
+      </div>
+
+      <div class="container">
+        <div class="row gy-5">
+          <!-- Estadía -->
+          <div class="col-md-4" data-aos="fade-up">
+            <h2 class="servicio-titulo">Temporary or permanent stay</h2>
+            <img
+              src="img/Estadia temporal o permananete.webp"
+              class="img-fluid rounded shadow-sm mb-3"
+              alt="Estadía"
+            />
+            <ul class="fa-ul text-start">
+              <li>
+                <span class="lucide" data-lucide="pizza"></span>Personalized
+                Meal Plan<br />
+              </li>
+              <li>
+                <span class="lucide" data-lucide="stethoscope"></span>
+                Constant Medical Supervision<br />
+              </li>
+              <li>
+                <span class="lucide" data-lucide="calendar-days"></span>
+                Access to Daily Activities and Special Programs<br />
+              </li>
+              <li>
+                <span class="lucide" data-lucide="users"></span> Regular
+                Communication and Support for Family Members<br />
+              </li>
+              <li>
+                <span class="lucide" data-lucide="bus"></span> Transportation
+                and Additional Facilities<br />
+              </li>
+            </ul>
+            <a
+              href="EstadiaTemporalPermanente-en.html"
+              class="btn btn-primary mt-3"
+              style="margin-left: 4em"
+              >See detail</a
+            >
+          </div>
+
+          <!-- Centro Diurno -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="servicio-titulo">Golden club</h2>
+            <img
+              src="img/Centro diurno.webp"
+              class="img-fluid rounded shadow-sm mb-3"
+              alt="Centro diurno"
+            />
+            <ul class="fa-ul text-start">
+              <li>
+                <span class="lucide" data-lucide="users"></span> Group or
+                individual activities<br />
+              </li>
+              <li>
+                <span class="lucide" data-lucide="stethoscope"></span> Attention
+                medical<br />
+              </li>
+              <li>
+                <span class="lucide" data-lucide="salad"></span> Menu prepared
+                by a Nutritionist<br />
+              </li>
+              <li>
+                <span class="lucide" data-lucide="dumbbell"></span> Physical and
+                cognitive activities<br />
+              </li>
+            </ul>
+            <br /><br /><br /><br />
+            <a
+              href="ClubDorado-en.html"
+              class="btn btn-primary mt-3"
+              style="margin-left: 4em; margin-top: 2em"
+              >See detail</a
+            >
+          </div>
+
+          <!-- Cuidados Posteriores -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="servicio-titulo">Postoperative Care</h2>
+            <img
+              src="img/Cuidados posteriores.webp"
+              class="img-fluid rounded shadow-sm mb-3"
+              alt="Cuidados"
+            />
+            <ul class="fa-ul text-start">
+              <li>
+                <span class="lucide" data-lucide="stethoscope"></span> Attention
+                24/7 <br />
+              </li>
+              <li>
+                <span class="lucide" data-lucide="activity"></span>
+                Rehabilitation and physiotherapy<br />
+              </li>
+              <li>
+                <span class="lucide" data-lucide="apple"></span> Menu by
+                Nutritionist<br />
+              </li>
+              <li>
+                <span class="lucide" data-lucide="heart-pulse"></span>
+                Psychological support and postoperative care education<br />
+              </li>
+            </ul>
+            <br /><br /><br />
+            <a
+              href="CuidadPostoperatorio-en.html"
+              class="btn btn-primary mt-3"
+              style="margin-left: 4em"
+              >See detail</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-white text-center py-4" style="background-color: #222">
+      <div class="container">
+        <p class="mb-2">Follow us on our social platforms</p>
+        <div class="mb-3 d-flex justify-content-center gap-4">
+          <a
+            href="https://es-la.facebook.com/edad.dorada.2025"
+            target="_blank"
+            class="text-white"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/edad_dorada.cr/"
+            target="_blank"
+            class="text-white"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a href="https://wa.me/50671797848" target="_blank" class="text-white"
+            ><i class="fab fa-whatsapp fa-2x"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@edaddorada.cr?_t=ZM-8t7XQ3ZYXRt&_r=1"
+            target="_blank"
+            class="text-white"
+            ><i class="fab fa-tiktok fa-2x"></i
+          ></a>
+        </div>
+
+        <p class="mb-2">Call us at:</p>
+        <p style="font-size: 2em">+506 7179-7848</p>
+        <p class="small mb-0">&copy; 2025 Golden Age. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

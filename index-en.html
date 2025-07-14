@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Age - Home</title>
+
+    <!-- Tipografía -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/htmlGeneral.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Estilo general -->
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8f9fa;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+      }
+      .hero-banner {
+        background: url("./img/Banner4.webp") center/cover no-repeat;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+
+      .hero-banner h1 {
+        color: white;
+      }
+      .hover-scale:hover {
+        transform: scale(1.03);
+        transition: transform 0.3s ease;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAV -->
+<header>
+  <nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background-color: #f8e501">
+    <div class="container">
+      <!-- Logo -->
+      <a
+        class="navbar-brand d-flex align-items-center justify-content-center shadow-sm"
+        href="index-en.html"
+        style="
+          background-color: white;
+          border-radius: 50%;
+          border: 3px solid #64a721;
+          width: 70px;
+          height: 70px;
+          padding: 5px;
+        "
+      >
+        <img
+          src="./img/LogoTCU-fotor-bg-remover-20250609144051.png"
+          alt="Logo Edad Dorada"
+          style="max-height: 60px; max-width: 60px"
+        />
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        ☰ Menú
+      </button>
+
+      <!-- Menú principal colapsable -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index-en.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Servicios-en.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Instalaciones-en.html">Facilities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="NuestroEquipo-en.html">Our team</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Selector de idioma siempre visible -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="languageDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+          >
+            🌐 Language / Lenguaje
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="languageDropdown"
+          >
+            <li>
+              <a class="dropdown-item" href="index.html">
+                <img
+                  src="https://hatscripts.github.io/circle-flags/flags/es.svg"
+                  alt="Español"
+                  width="20"
+                  class="me-2"
+                />
+                Español
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="index-en.html">
+                <img
+                  src="https://hatscripts.github.io/circle-flags/flags/us.svg"
+                  alt="English"
+                  width="20"
+                  class="me-2"
+                />
+                English
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+    <!-- HERO -->
+    <div
+      class="hero-banner d-flex align-items-center justify-content-center text-center"
+    >
+      <h1
+        class="display-5 animate__animated animate__fadeInDown"
+        style="
+          margin-top: 7.5em;
+          color: #030303;
+          font-family: 'Courgette', serif;
+        "
+      >
+        "They always took care of you, it's time to take care of them"
+      </h1>
+    </div>
+
+    <!-- CONTENIDO -->
+    <main class="container py-5">
+      <section data-aos="fade-up">
+        <h1 class="mb-3">About Golden Age</h1>
+        <p>
+          In the midst of a natural paradise, where peace and beauty intertwine,
+          we have created a loving and caring home for seniors.  Our center is
+          not just a place of care; it is a sanctuary where every detail
+          reflects our devotion to the well-being of those who reside here.
+        </p>
+        <p>
+          Surrounded by lush gardens and the serenity of nature, our residents
+          enjoy an environment that nurtures both body and soul.  The rooms are
+          cozy and the outdoor spaces offer a haven of tranquility, while our
+          deeply committed staff provides care that goes beyond the
+          conventional.
+        </p>
+        <p>
+          Welcome to a place where nature and a passion for caregiving come
+          together to offer a full and dignified life.
+        </p>
+      </section>
+
+      <section class="mt-5" data-aos="fade-up">
+        <h1 class="mb-3">
+          <i class="fas fa-seedling me-2 text-success"></i>Our Mission
+        </h1>
+        <p>
+          To offer seniors a space of integral wellness in contact with nature,
+          promoting their physical, emotional and social health through
+          personalized care, outdoor recreational activities and specialized
+          health services that allow them to maintain their dignity and
+          independence, in a safe, respectful and peaceful environment that
+          favors their quality of life and connection with the natural
+          environment
+        </p>
+      </section>
+
+      <section class="mt-5" data-aos="fade-up">
+        <h1 class="mb-3">
+          <i class="fas fa-eye me-2 text-info"></i>Our Vision
+        </h1>
+        <p>
+          To be a comprehensive care center for seniors, recognized for
+          excellence in providing personalized loving care in a warm and
+          welcoming environment, under a nationally recognized model.
+        </p>
+      </section>
+
+      <section class="mt-5" data-aos="fade-up">
+        <h1 class="mb-4">
+          <i class="fas fa-hand-holding-heart me-2 text-warning"></i>Our
+          Services
+        </h1>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card shadow-sm border-0 hover-scale">
+              <div class="card-body d-flex align-items-center gap-3">
+                <i
+                  data-lucide="stethoscope"
+                  class="text-success"
+                  style="width: 24px; height: 24px"
+                ></i>
+                <h5 class="m-0">Nursing 24/7</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card shadow-sm border-0 hover-scale">
+              <div class="card-body d-flex align-items-center gap-3">
+                <i
+                  data-lucide="leaf"
+                  class="text-success"
+                  style="width: 24px; height: 24px"
+                ></i>
+                <h5 class="m-0">Nutrition</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card shadow-sm border-0 hover-scale">
+              <div class="card-body d-flex align-items-center gap-3">
+                <i
+                  data-lucide="heart-pulse"
+                  class="text-primary"
+                  style="width: 24px; height: 24px"
+                ></i>
+                <h5 class="m-0">General Medicine</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card shadow-sm border-0 hover-scale">
+              <div class="card-body d-flex align-items-center gap-3">
+                <i
+                  data-lucide="brain"
+                  class="text-purple"
+                  style="width: 24px; height: 24px"
+                ></i>
+                <h5 class="m-0">Psychology</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card shadow-sm border-0 hover-scale">
+              <div class="card-body d-flex align-items-center gap-3">
+                <i
+                  data-lucide="flower"
+                  class="text-danger"
+                  style="width: 24px; height: 24px"
+                ></i>
+                <h5 class="m-0">Spa</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card shadow-sm border-0 hover-scale">
+              <div class="card-body d-flex align-items-center gap-3">
+                <i
+                  data-lucide="activity"
+                  class="text-indigo"
+                  style="width: 24px; height: 24px"
+                ></i>
+                <h5 class="m-0">
+                  Physical, occupational and recreational therapy activities
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 hover-scale">
+            <div class="card-body d-flex align-items-center gap-3">
+              <i
+                data-lucide="users"
+                class="text-indigo"
+                style="width: 24px; height: 24px"
+              ></i>
+              <h5 class="m-0">Social Work</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-5" data-aos="fade-up">
+        <div class="p-4 bg-light rounded-4 shadow-sm text-center">
+          <h1 class="mb-4">
+            <i class="fas fa-clock me-2 text-warning"></i>Contacts and Schedules
+          </h1>
+
+          <div class="row justify-content-center text-start">
+            <!-- Contacto -->
+            <div class="col-md-6 mb-4">
+              <div class="p-4 border rounded shadow-sm text-center">
+                <h4 class="mb-3">
+                  <i class="fas fa-envelope text-primary me-2"></i>Email
+                </h4>
+                <a
+                  href="mailto:info@edaddoradacr.com"
+                  target="_blank"
+                  class="text-decoration-none fs-5 d-block mb-3"
+                >
+                  info@edaddoradacr.com
+                </a>
+
+                <hr class="my-4" />
+
+                <h4 class="mb-3">
+                  <i class="fas fa-share-alt text-primary me-2"></i>Social
+                  networks
+                </h4>
+                <!-- Aquí puedes agregar íconos de redes sociales -->
+                <div class="d-flex justify-content-center gap-4">
+                  <a
+                    href="https://es-la.facebook.com/edad.dorada.2025"
+                    target="_blank"
+                    class="text-dark fs-4"
+                  >
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/edad_dorada.cr/"
+                    target="_blank"
+                    class="text-dark fs-4"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@edaddorada.cr?_t=ZM-8t7XQ3ZYXRt&_r=1"
+                    target="_blank"
+                    class="text-dark fs-4"
+                  >
+                    <i class="fab fa-tiktok"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Horario -->
+            <div class="col-md-5 d-flex flex-column align-items-center">
+              <h4>
+                <i class="fas fa-calendar-alt text-success me-2"></i>Opening
+                hours
+              </h4>
+              <ul class="list-group list-group-flush w-100 text-center">
+                <li class="list-group-item">Monday: 09:00 a.m. - 05:00 p.m.</li>
+                <li class="list-group-item">
+                  Thursday: 09:00 a.m. - 05:00 p.m.
+                </li>
+                <li class="list-group-item">
+                  Wednesday: 09:00 a.m. - 05:00 p.m.
+                </li>
+                <li class="list-group-item">
+                  Tuesday: 09:00 a.m. - 05:00 p.m.
+                </li>
+                <li class="list-group-item">Friday: 09:00 a.m. - 05:00 p.m.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-5 text-center" data-aos="fade-up">
+        <h1 class="mb-3">Find us here</h1>
+        <div class="d-flex justify-content-center">
+          <div
+            style="
+              width: 100%;
+              max-width: 800px;
+              height: 400px;
+              border-radius: 12px;
+              overflow: hidden;
+            "
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.1790087656664!2d-84.2580124259223!3d10.002067773001087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f90072c24c49%3A0x30abddfe1fab89fd!2sEDAD%20DORADA!5e0!3m2!1ses-419!2scr!4v1749587194841!5m2!1ses-419!2scr"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-white text-center py-4" style="background-color: #222">
+      <div class="container">
+        <p class="mb-2">Follow us on our social platforms</p>
+        <div class="mb-3 d-flex justify-content-center gap-4">
+          <a
+            href="https://es-la.facebook.com/edad.dorada.2025"
+            target="_blank"
+            class="text-white"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/edad_dorada.cr/"
+            target="_blank"
+            class="text-white"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a href="https://wa.me/50671797848" target="_blank" class="text-white"
+            ><i class="fab fa-whatsapp fa-2x"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@edaddorada.cr?_t=ZM-8t7XQ3ZYXRt&_r=1"
+            target="_blank"
+            class="text-white"
+            ><i class="fab fa-tiktok fa-2x"></i
+          ></a>
+        </div>
+
+        <p class="mb-2">Call us at:</p>
+        <p style="font-size: 2em">+506 7179-7848</p>
+        <p class="small mb-0">&copy; 2025 Golden Age. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

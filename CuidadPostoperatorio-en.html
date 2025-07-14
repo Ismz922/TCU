@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golde Age - Postoperative Care</title>
+
+    <!-- Tipografía -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/banners.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/htmlGeneral.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Estilos personalizados -->
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8f9fa;
+        scroll-behavior: smooth;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+      }
+
+      .hero-banner {
+        background: url("./img/fondo.jpg") center/cover no-repeat;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+
+      .hover-scale:hover {
+        transform: scale(1.03);
+        transition: transform 0.3s ease;
+      }
+
+      .servicio-titulo {
+        font-size: 1.5em;
+        margin-bottom: 1rem;
+      }
+
+      .btn-primary {
+        background-color: #f8e501;
+        color: #222;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #d6c701;
+        color: #000;
+      }
+
+      .fa-ul {
+        padding-left: 1.5em;
+      }
+
+      .lucide {
+        stroke-width: 2.2;
+        vertical-align: middle;
+      }
+
+      footer {
+        background-color: #222;
+      }
+      .service-card {
+        background-color: #64a721;
+        border-left: 5px solid #f8e501;
+        color: black;
+        padding: 2rem;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+        transition: transform 0.3s;
+      }
+
+      .service-card:hover {
+        transform: scale(1.02);
+      }
+
+      .service-icon {
+        background-color: white;
+        border-radius: 50%;
+        padding: 0.4rem;
+        font-size: 1.5rem;
+        color: #64a721;
+        border: 2px solid #f8e501;
+        margin-right: 0.5rem;
+      }
+
+      .carrot {
+        font-size: 2rem;
+        color: #ff7400;
+        margin-right: 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+<header>
+  <nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background-color: #f8e501">
+    <div class="container">
+      <!-- Logo -->
+      <a
+        class="navbar-brand d-flex align-items-center justify-content-center shadow-sm"
+        href="index-en.html"
+        style="
+          background-color: white;
+          border-radius: 50%;
+          border: 3px solid #64a721;
+          width: 70px;
+          height: 70px;
+          padding: 5px;
+        "
+      >
+        <img
+          src="./img/LogoTCU-fotor-bg-remover-20250609144051.png"
+          alt="Logo Edad Dorada"
+          style="max-height: 60px; max-width: 60px"
+        />
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        ☰ Menú
+      </button>
+
+      <!-- Menú principal colapsable -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index-en.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Servicios-en.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Instalaciones-en.html">Facilities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="NuestroEquipo-en.html">Our team</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Selector de idioma siempre visible -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="languageDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+          >
+            🌐 Language / Lenguaje
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="languageDropdown"
+          >
+            <li>
+              <a class="dropdown-item" href="CuidadoPostoperatorio.html">
+                <img
+                  src="https://hatscripts.github.io/circle-flags/flags/es.svg"
+                  alt="Español"
+                  width="20"
+                  class="me-2"
+                />
+                Español
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="CuidadPostoperatorio-en.html">
+                <img
+                  src="https://hatscripts.github.io/circle-flags/flags/us.svg"
+                  alt="English"
+                  width="20"
+                  class="me-2"
+                />
+                English
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+    <!-- LOGO Y SLOGAN -->
+    <section class="logo-section text-center py-5">
+      <div class="container" data-aos="fade-up">
+        <div
+          class="d-inline-block shadow-lg mb-3"
+          style="
+            border: 5px solid #64a721;
+            border-radius: 50%;
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin-bottom: 20px;
+          "
+        >
+          <img
+            src="img/LogoTCU-fotor-bg-remover-20250609144051.png"
+            alt="Logo empresa"
+            style="max-height: 120px; max-width: 120px"
+          />
+        </div>
+        <h2 class="slogan">
+          They always took care of you, it's time to take care of them
+        </h2>
+      </div>
+    </section>
+    <section class="container py-5">
+      <div class="container text-center mb-4">
+        <h2>Postoperative Care</h2>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;">
+              <i class="fas fa-eye service-icon"></i> Constant Medical
+              Supervision
+            </h3>
+            <p >
+              Medical care and intensive monitoring of vital signs, with regular
+              visits from physicians specialized in geriatrics and
+              physiotherapy.  Rigorous control of postoperative recovery is
+              guaranteed, ensuring that each patient receives the necessary
+              treatment for optimal recovery.
+            </p>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;">
+              <i class="fas fa-dumbbell service-icon"></i>Personalized
+              Rehabilitation Programs
+            </h3>
+            <p >
+              Physiotherapy and rehabilitation programs designed to restore the
+              patient's mobility, strength and balance.  Rehabilitation sessions
+              are tailored to individual needs and are supervised by
+              physiotherapists who are experts in postoperative recovery.
+            </p>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;">
+              <i class="fas fa-bowl-rice service-icon"></i>Specialized Recovery
+              Diets
+            </h3>
+            <p>
+              Specific meal plans to accelerate recovery, designed by
+              nutritionists who consider the patient's dietary restrictions and
+              energy needs. Meals are prepared with fresh ingredients and served
+              at appropriate times to maximize nutrient absorption.
+            </p>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;">
+              <i class="fas fa-user-nurse service-icon"></i>Emotional and
+              psychological support
+            </h3>
+            <p>
+              Nursing staff will provide emotional support to help patients
+              manage postoperative stress and anxiety. The staff will work with
+              the patient to develop coping strategies and provide an
+              emotionally supportive environment.
+            </p>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;"> 
+              <i class="fas fa-users service-icon"></i>Regular Counseling and
+              Communication for Family Members
+            </h3>
+            <p>
+              Regular reports on the patient's progress are sent to family
+              members to keep them informed and reassured. Counseling is also
+              offered to help family members understand the recovery process and
+              how to support their loved one upon returning home.
+            </p>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;">
+              <i class="fas fa-music service-icon"></i>Access to Special
+              Activities and Programs During Recovery
+            </h3>
+            <p>
+              While recovering, patients have the opportunity to participate in
+              recreational activities and occupational therapies, such as
+              painting, music and gardening, that are designed to enhance their
+              emotional and physical well-being.
+            </p>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;">
+              <i class="fas fa-bed service-icon"></i>Private Rooms with Access
+              to Nature
+            </h3>
+            <p>
+              Private, comfortable recovery spaces with direct access to gardens
+              and outdoor seating areas, creating a relaxing environment
+              conducive to healing.
+            </p>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;">
+              <i class="fas fa-bus service-icon"></i>Additional Facilities and
+              Transportation
+            </h3>
+            <p>
+              Transportation services for additional medical appointments and
+              outpatient consultations, as well as facilities for family members
+              to visit the patient and participate in the recovery process.
+            </p>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;"><i class="fas fa-spa service-icon"></i>Spa</h3>
+            <p>
+              We offer a spa service where residents have the option of enjoying
+              a relaxing massage, facial treatments, manicures, pedicures, and
+              hair styling.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5 text-center">
+      <div
+        class="card p-4 shadow-sm mx-auto"
+        style="max-width: 400px"
+        data-aos="fade-up"
+      >
+        <h3 class="mb-3">Contact us for more information</h3>
+        <a href="FormularioDeContacto-en.html" class="btn btn-primary mt-3">
+          <i class="fas fa-envelope me-2"></i>Contact form
+        </a>
+      </div>
+    </section>
+
+    <footer class="text-white text-center py-4" style="background-color: #222">
+      <div class="container">
+        <p class="mb-2">Follow us on our social platforms</p>
+        <div class="mb-3 d-flex justify-content-center gap-4">
+          <a
+            href="https://es-la.facebook.com/edad.dorada.2025"
+            target="_blank"
+            class="text-white"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/edad_dorada.cr/"
+            target="_blank"
+            class="text-white"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a href="https://wa.me/50671797848" target="_blank" class="text-white"
+            ><i class="fab fa-whatsapp fa-2x"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@edaddorada.cr?_t=ZM-8t7XQ3ZYXRt&_r=1"
+            target="_blank"
+            class="text-white"
+            ><i class="fab fa-tiktok fa-2x"></i
+          ></a>
+        </div>
+
+        <p class="mb-2">Call us at:</p>
+        <p style="font-size: 2em">+506 7179-7848</p>
+        <p class="small mb-0">&copy; 2025 Golden Age. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

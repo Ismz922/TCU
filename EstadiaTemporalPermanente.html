@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edad Dorada - Estadia temporal o permanente</title>
+
+    <!-- Tipografía -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/banners.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/htmlGeneral.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Estilos personalizados -->
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8f9fa;
+        scroll-behavior: smooth;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+      }
+
+      .service-card {
+        background-color: #64a721;
+        border-left: 5px solid #f8e501;
+        color: black;
+        padding: 2rem;
+        border-radius: 12px;
+        transition: transform 0.3s;
+      }
+
+      .service-card:hover {
+        transform: scale(1.02);
+      }
+
+      .service-icon {
+        background-color: white;
+        border-radius: 50%;
+        padding: 0.4rem;
+        font-size: 1.5rem;
+        color: #64a721;
+        border: 2px solid #f8e501;
+        margin-right: 0.5rem;
+      }
+
+      .btn-primary {
+        background-color: #f8e501;
+        color: #222;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #d6c701;
+        color: #000;
+      }
+
+      footer {
+        background-color: #222;
+      }
+    </style>
+  </head>
+  <body>
+<header>
+  <nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background-color: #f8e501">
+    <div class="container">
+      <!-- Logo -->
+      <a
+        class="navbar-brand d-flex align-items-center justify-content-center shadow-sm"
+        href="index.html"
+        style="
+          background-color: white;
+          border-radius: 50%;
+          border: 3px solid #64a721;
+          width: 70px;
+          height: 70px;
+          padding: 5px;
+        "
+      >
+        <img
+          src="./img/LogoTCU-fotor-bg-remover-20250609144051.png"
+          alt="Logo Edad Dorada"
+          style="max-height: 60px; max-width: 60px"
+        />
+      </a>
+
+      <!-- Botón colapsable -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        ☰ Menú
+      </button>
+
+      <!-- Enlaces del menú -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Instalaciones.html">Instalaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="NuestroEquipo.html">Nuestro equipo</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Selector de idioma siempre visible -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="languageDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+          >
+            🌐 Language / Lenguaje
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="languageDropdown"
+          >
+            <li>
+              <a class="dropdown-item" href="CuidadoPostoperatorio.html">
+                <img
+                  src="https://hatscripts.github.io/circle-flags/flags/es.svg"
+                  alt="Español"
+                  width="20"
+                  class="me-2"
+                />
+                Español
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="CuidadPostoperatorio-en.html">
+                <img
+                  src="https://hatscripts.github.io/circle-flags/flags/us.svg"
+                  alt="English"
+                  width="20"
+                  class="me-2"
+                />
+                English
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+    <!-- LOGO Y SLOGAN -->
+<section class="logo-section text-center py-5">
+  <div class="container" data-aos="fade-up">
+    <div
+      class="d-inline-block shadow-lg mb-3"
+      style="
+        border: 5px solid #64a721;
+        border-radius: 50%;
+        background-color: white;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-bottom: 20px;
+      "
+    >
+      <img
+        src="img/LogoTCU-fotor-bg-remover-20250609144051.png"
+        alt="Logo empresa"
+        style="max-height: 120px; max-width: 120px"
+      />
+    </div>
+    <h2 class="slogan">
+      Ellos siempre cuidaron de ti, es tiempo de cuidar de ellos
+    </h2>
+  </div>
+</section>
+
+
+
+    <section class="container py-5">
+      <div class="container text-center">
+        <h2>Estadía temporal o permanente</h2>
+        <br><br>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;">
+              <i class="fas fa-bed service-icon"></i>Habitaciones cómodas y
+              seguras
+            </h3>
+            <p>
+              Habitaciones privadas o compartidas, completamente ajustables a
+              las necesidades y preferencias del residente, con opciones de
+              personalización en la decoración para crear un ambiente familiar y
+              acogedor. Cada habitación cuenta con cama espaciosa (full o
+              Queen), closet, sistemas de emergencia, con espacios adaptados a
+              los estándares de accesibilidad establecidos por la ley 7600.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;">
+              <i class="fas fa-utensils service-icon"></i>Plan de Alimentación
+              Personalizado
+            </h3>
+            <p>
+              Menús diseñados por nutricionista, adaptados a las necesidades
+              dietéticas y preferencias personales de cada residente. Se ofrecen
+              tres comidas principales y dos meriendas diarias, con opciones
+              para dietas especiales como bajas en sodio, diabéticas, o ricas en
+              fibra. Además, se promueve la participación de los residentes en
+              la planificación del menú.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;">
+              <i class="fas fa-spa service-icon"></i>Acceso a Actividades
+              Diarias y Programas Especiales
+            </h3>
+
+            <p>
+              Un calendario completo de actividades que incluye jardinería,
+              clases de arte, clubes de lectura, y eventos sociales. Estas
+              actividades están diseñadas para mantener la mente activa, el
+              cuerpo en movimiento y fomentar la interacción social.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;">
+              <i class="fas fa-user-md service-icon"></i>Supervisión de
+              enfermería
+            </h3>
+            <p>
+              Atención de enfermería 24/7. Se incluye el monitoreo regular de la
+              salud, administración de medicamentos, coordinación de citas
+              médicas en conjunto con la familia, acceso a profesionales de
+              terapia física, trabajo social, psicología, médico general y a
+              especialistas según sea necesario. Además, se realizan
+              evaluaciones de salud periódicas para ajustar los planes de
+              cuidado individual.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;">
+              <i class="fas fa-hand-holding-heart service-icon"></i>Comunicación
+              Regular y Apoyo para Familiares
+            </h3>
+            <p>
+              Informes detallados y regulares, además de la planificación de
+              reuniones periódicas con la familia para discutir sobre el estado
+              de salud, bienestar y progreso del residente. Además,los
+              familiares y seres cercanos podrán participar de talleres
+              educativos sobre temas de interés del adulto mayor, manejo de
+              enfermedades crónicas entre otras.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;">
+              <i class="fas fa-tree service-icon"></i>Acceso a áreas verdes y
+              entorno natural
+            </h3>
+            <p>
+              El centro está rodeado de naturaleza, proporcionando un entorno
+              tranquilo y terapéutico. Los residentes tienen acceso a jardines,
+              senderos para caminatas, y áreas de descanso al aire libre,
+              promoviendo la conexión con la naturaleza y la relajación.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;">
+              <i class="fas fa-bus service-icon"></i>Transporte y Facilidades
+              Adicionales
+            </h3>
+            <p>
+              Servicios de transporte para citas médicas, visitas familiares y
+              actividades externas.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="service-card h-100">
+            <h3 style=" text-align: center;"><i class="fas fa-spa service-icon"></i>Spa</h3>
+            <p>
+              Contamos con servicio de spa en donde los residentes tienen la
+              opción de disfrutar de un masaje relajante, tratamientos faciales,
+              manicura, pedicura y estilismo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container py-5 text-center">
+      <div
+        class="card p-4 shadow-sm mx-auto"
+        style="max-width: 400px"
+        data-aos="fade-up"
+      >
+        <h3 class="mb-3">Contáctenos para más información</h3>
+        <a href="FormularioDeContacto.html" class="btn btn-primary mt-3">
+          <i class="fas fa-envelope me-2"></i>Formulario de contacto
+        </a>
+      </div>
+    </section>
+
+    <section
+      class="container"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+      "
+    >
+      <a
+        href="FormularioDeContacto.html"
+        style="
+          background-color: #f8e501;
+          padding: 1em 2em;
+          color: black;
+          text-decoration: none;
+          border-radius: 1em;
+          font-weight: bold;
+        "
+      >
+        Contactenos
+      </a>
+    </section>
+
+    <br /><br />
+
+    <footer class="text-white text-center py-4">
+      <div class="container">
+        <p class="mb-2">Síguenos en nuestras redes sociales</p>
+        <div class="mb-3 d-flex justify-content-center gap-4">
+          <a
+            href="https://es-la.facebook.com/edad.dorada.2025"
+            target="_blank"
+            class="text-white"
+          >
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/edad_dorada.cr/"
+            target="_blank"
+            class="text-white"
+          >
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a
+            href="https://wa.me/50671797848"
+            target="_blank"
+            class="text-white"
+          >
+            <i class="fab fa-whatsapp fa-2x"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@edaddorada.cr?_t=ZM-8t7XQ3ZYXRt&_r=1"
+            target="_blank"
+            class="text-white"
+          >
+            <i class="fab fa-tiktok fa-2x"></i>
+          </a>
+        </div>
+
+        <p class="mb-2">Llámenos al:</p>
+        <p style="font-size: 2em">+506 7179-7848</p>
+        <p class="small mb-0">
+          &copy; 2025 Edad Dorada. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
