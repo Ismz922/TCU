@@ -1,0 +1,48 @@
+.banner-con-imagen {
+ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  padding: 4em 1em;
+  text-align: center;
+  position: relative;
+  color: white;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+.banner-con-imagen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* oscurece un poco la imagen */
+  z-index: 0;
+}
+
+.banner-con-imagen h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 2.5em;
+  animation: fadeInDown 1s ease-out;
+}
+
+@media (max-width: 768px) {
+  .banner-con-imagen h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* Animación suave de entrada */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

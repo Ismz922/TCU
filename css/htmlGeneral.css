@@ -1,0 +1,212 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo-img {
+  height: 80px;
+  width: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Courgette", serif;
+}
+
+
+
+.hover-scale:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  font-size: 1.1em;
+}
+
+.navbar {
+  background-color: #f8e501;
+  font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.2rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.hero-banner {
+  background-image: url('./img/banner2.webp');
+  /* Ruta corregida */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5em 1em;
+  text-align: center;
+  position: relative;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 0;
+}
+
+.hero-banner h1 {
+  position: relative;
+  font-size: 2.5em;
+  z-index: 1;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-banner h1 {
+    font-size: 1.5em;
+  }
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.4;
+}
+
+.servicios-lista {
+  list-style: none;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.servicios-lista li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.servicios-lista li span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.logo-section {
+  background-color: #f9f9f9;
+  /* Color suave de fondo */
+}
+
+.logo-img {
+  max-width: 200px;
+
+}
+
+.slogan {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #333;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.banner {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #fff;
+  max-width: 600px;
+}
+
+.posbanner {
+  font-size: 0.90em;
+  font-weight: 550;
+}
+
+@media (max-width: 768px) {
+  .slogan {
+    font-size: 1.2em;
+    padding: 0 1em;
+  }
+
+  .banner {
+    font-size: 1.2em;
+    padding: 0 1em;
+  }
+
+  .logo-img {
+    max-width: 150px;
+  }
+}
+
+.servicios-section {
+  background-color: #fefefe;
+}
+
+.titulo-principal {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #333;
+}
+
+.servicio-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.fa-ul {
+  padding-left: 2em;
+}
+
+.fa-li {
+  color: #f8e501;
+}
+
+.btn-primary {
+  background-color: #f8e501;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e6d500;
+  color: #000;
+}
+
+.card-custom {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  min-height: 100%;
+}
+
+.card-custom img {
+  max-height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
